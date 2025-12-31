@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1b1e2e">
+  <title>Special Gift 💜</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating Hearts -->
+<div class="hearts-container"></div>
+
+<!-- 🩺 Medical Dream Layer -->
+<div class="dental-layer">
+  <span class="dental-icon d1">🩺</span>
+  <span class="dental-icon d2">✨</span>
+  <span class="dental-icon d3">⚕️</span>
+</div>
+
+<div class="app">
+
+  <!-- Page 1 : Login -->
+  <div class="card login" id="page1">
+    <div class="year-box">2026</div>
+    <div class="tree-emoji">🎄</div>
+    <h1 class="title">Special Gift</h1>
+
+    <input type="password" id="password" placeholder="😍تاريخ عيد ميلادك يروح قلبي">
+    <button onclick="goNext()">دخول</button>
+
+    <div class="icons">💕 🌍 🩺 ⚕️</div>
+  </div>
+
+  <!-- Page 2 : Message -->
+  <div class="card hidden" id="page2">
+    <h2>سنة جديدة… وإنتي معانا 💕</h2>
+
+    <p>
+بداية سنة جديدة،  
+وإنتِ معايا بقالنا 3 شهور،  
+مش رقم…  
+ده وقت حسّسني قد إيه وجودك  
+فرق في حياتي 🤍  
+
+سنة بنبدأها وإنتِ فيها  
+طالبة في كلية طب بشري،  
+بتعيشي ضغط وتعب مش أي حد يستحمله،  
+بس دايمًا ثابتة وقوية.  
+
+كل يوم دراسة،  
+كل محاضرة وسهر،  
+بيأكدلي إن المكان ده  
+يستاهلك.  
+
+مش طريق سهل،  
+ولا دراسة سهلة،  
+بس إنتِ ما اخترتيش السهل،  
+واخترتي حلمك.  
+
+بنتعب ونقع ونقوم،  
+بس ما بنستسلمش،  
+ووجودك في حياتي  
+سند وقوة في أصعب وقت.  
+
+السنة دي مش عادية،  
+دي مرحلة،  
+وإنتِ قدّها فعلًا.  
+
+وأنا فخور بيكي،  
+وبكل خطوة بتاخديها،  
+وإن شاء الله  
+اللي جاي أجمل وإحنا سوا 🤍
+</p>
+
+<!-- Study Quotes -->
+<div class="study-quotes">
+  <p>• تعبك النهارده هو إنجاز بكرة</p>
+  <p>• كل محاضرة بتقربك أكتر من حلمك</p>
+  <p>• كلية الطب محتاجة قلب قوي… وإنتي عندك 🤍🩺</p>
+</div>
+
+
+    <div class="scroll-hint">
+      <span class="arrow">↓</span>
+      <span class="text">كمّلي</span>
+    </div>
+
+    <button onclick="goNext2()">كملي يروحقلبي </button>
+  </div>
+
+  <!-- Page 3 : Final -->
+  <div class="card special-bg hidden" id="page3">
+    <h1 class="name">Menna 🤍</h1>
+
+    <p class="final-message">
+      يمكن مش بعرف أتكلم كتير،  
+بس حابب تعرفي إن وجودك في حياتي  
+بقى حاجة ثابتة ومهمة.  
+
+3 شهور عدّوا،  
+وكل يوم فيهم علّمني  
+إن القرب مش بالوقت،  
+بالحِسّة والراحة.  
+
+إنتِ مش بس طالبة طب،  
+إنتِ إنسانة بتتحمّل أكتر  
+مما بتبين،  
+وبتكمّل حتى وإنتِ تعبانة.  
+
+بحب فيكي إنك هادية،  
+قوية،  
+ومخلّيا الصعب يعدّي  
+من غير ما يكسرك.  
+
+أنا هنا،  
+مش بس في اللحظات السهلة،  
+في الضغط،  
+وفي التعب،  
+وفي كل مرة تحسي إنك لوحدك.  
+
+مش مستعجلين على حاجة،  
+بس ماشيين صح،  
+وخطوة خطوة،  
+مع بعض 🤍
+    </p>
+
+    <div class="dream-line">
+      حلمنا إننا نكمل سوا… وإنتي قده 🤍
+    </div>
+
+    <div class="scroll-hint">
+      <span class="arrow">↓</span>
+      <span class="text">آخر حاجة</span>
+    </div>
+
+    <div class="memory-box">
+      <img src="bac.jpeg" alt="memory">
+    </div>
+
+    <button class="fixed-finish" onclick="finish()">إنهاء</button>
+  </div>
+
+</div>
+
+<!-- Final Screen -->
+<div class="overlay hidden" id="finalScreen">
+  <div class="finalBox">
+    <div class="date">Happy New Year🤍</div>
+    <div class="date">24 / 9 / 2025🤍</div>
+    <div class="countdown" id="countdown">2026</div>
+  </div>
+</div>
+
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<canvas id="snowCanvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
